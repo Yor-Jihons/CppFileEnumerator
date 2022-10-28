@@ -1,0 +1,6 @@
+g++ -std=c++11 -o .\src\lib_main.o -c .\src\lib_main.cpp
+md bin
+ar r .\bin\libtest.a .\src\lib_main.o
+copy .\src\lib_main.h .\bin\*
+
+ar t .\bin\libtest.a
